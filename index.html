@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfAi</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Prof Ai</h1>
+    </header>
+
+    <main>
+        <div class="container1">
+        <h1>Preencha os dados abaixo e gere sua avaliação automaticamente</h1>
+        <h3>Ferramenta inteligente para criar provas de forma rápida e personalizada</h3>
+        </div>
+
+    <!--Abertura do container do Formulário-->
+     <div class="container2">
+        <h2>Gere sua prova</h2>
+
+        <!--Abertura do Formulário-->
+        <form action="">
+
+            <!--Abertura da primeira linha do formulário-->
+            <div class="input-line">
+                <div class="school-year">
+                    <label for="school-year-select">Ano Escolar</label>
+                    <select name="school-year-select" id="school-year-select">
+                        <option value="1 ano">1º Ano EF</option>
+                        <option value="2 ano">2º Ano EF</option>
+                        <option value="3 ano">3º Ano EF</option>
+                        <option value="4 ano">4º Ano EF</option>
+                        <option value="5 ano">5º Ano EF</option>
+                    </select>
+                </div>
+
+                <div class="discipline">
+                    <label for="input-discipline">Disciplina</label>
+                    <input type="text" name="input-discipline" id="input-discipline">
+                </div>
+            </div>
+
+            <!--Abertura da segunda linha do formulário-->
+            <div class="input-line">
+                <div class="content">
+                    <label for="input-content">Conteúdo</label>
+                    <input type="text" name="input-content" id="input-content">
+                </div>
+
+                <div class="number-questions">
+                    <label for="input-number-questions">Número de Questões</label>
+                    <input type="number" name="input-number-questions" id="input-number-questions"> 
+                </div>
+            </div>
+
+            <div class="add-instructions">
+                <label for="input-instructions">Instruções Adicionais</label>
+                <textarea name="input-instructions" id="input-instructions"></textarea>
+            </div>
+
+            <div class="submit-btn">
+                <button type="submit">Gerar Avaliação</button>
+            </div>
+        </form>
+     </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
