@@ -6,6 +6,10 @@
     align-items: center;
 }
 
+body {
+    background-color: #f5f9fd;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -35,7 +39,8 @@ header h1 {
     text-align: center;
     align-items: center;
     flex-direction: column;
-    margin: 2.5rem;
+    margin: 2rem;
+    margin-bottom: .6rem;
 }
 
 .container1 h1 {
@@ -54,8 +59,7 @@ header h1 {
 .container2 {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 2px 1px 12px -1px rgba(0,0,0,0.56);
-    padding: 5rem 3rem;
+    padding: 6px;
     width: 600px;
     display: flex;
     align-items: center;
@@ -63,4 +67,85 @@ header h1 {
     flex-direction: column;
     margin: 2.5rem;
     justify-content: center;
+    box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.46);
+}
+
+.container2 h2 {
+    color: #338bff;
+    font-size: 1.7rem;
+    padding: 10px 5px;
+    margin-bottom: 1rem;
+}
+
+.input-line {
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+
+.input-line > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.input-line label {
+    margin-bottom: .3rem;
+    color: #338bff;
+    font-weight: bold;
+}
+
+.add-instructions {
+    margin-bottom: .3rem;
+    color: #338bff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+select, input, textarea {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0.5px solid rgb(197, 197, 197);
+    font-size: 1rem;
+    background-color: #f5f9fd;
+}
+
+.add-instructions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.input-style {
+    margin-bottom: 1.5rem;
+    width: 100%;
+    padding: 0.75rem 1rem;
+}
+
+.submit-btn {
+    background-color: #338bff;
+    padding: 10px 200px;
+    color: #fff;
+    font-weight: bold;
+    appearance: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    margin-bottom: 1rem;
+    opacity: .7;
+}
+
+.submit-btn:hover {
+    opacity: 1;
 }
